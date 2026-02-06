@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Al Bayan University</title>
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:radial-gradient(circle,#ff5fa2,#1a0010);
+    font-family:Arial,Helvetica,sans-serif;
+    overflow:hidden;
+}
+.cube{
+    width:320px;
+    height:320px;
+    background:linear-gradient(135deg,#fff,#ffb6d9);
+    box-shadow:0 0 40px #ff4fa0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    animation:float 4s ease-in-out infinite;
+    transform-style:preserve-3d;
+}
+@keyframes float{
+    0%{transform:rotateX(0deg) rotateY(0deg) translateY(0)}
+    50%{transform:rotateX(20deg) rotateY(20deg) translateY(-20px)}
+    100%{transform:rotateX(0deg) rotateY(0deg) translateY(0)}
+}
+.neon{
+    color:#ff008c;
+    text-shadow:0 0 10px #ff008c,0 0 30px #ff4fa0;
+}
+button{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    border-radius:25px;
+    background:#ff008c;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 0 15px #ff008c;
+}
+button:hover{transform:scale(1.1)}
+img{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 0 20px #ff4fa0;
+}
+</style>
+</head>
+<body>
+
+<div class="cube">
+    <!-- حط صورتك هنا -->
+    <img src="photo.png" alt="Profile">
+    <h2 class="neon">AL BAYAN UNIVERSITY</h2>
+    <h3>Information Technology</h3>
+    <p><strong>Omar Yasser Omar</strong></p>
+    <button onclick="location.href='intro.html'">Start Project</button>
+</div>
+
+</body>
+</html>
